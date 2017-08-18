@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0"
+            prefWidth="874.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="mainWin.saveLocationPrompt">
+    <children>
+        <ImageView fitHeight="411.0" fitWidth="860.0" layoutX="6.0" layoutY="5.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../images/back2.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="44.0" fitWidth="502.0" layoutX="291.0" layoutY="108.0" opacity="0.31" pickOnBounds="true">
+            <image>
+                <Image url="@../images/backG.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="104.0" fitWidth="171.0" layoutX="78.0" layoutY="106.0" opacity="0.31" pickOnBounds="true">
+            <image>
+                <Image url="@../images/backG.png"/>
+            </image>
+        </ImageView>
+        <Button fx:id="locateButton" layoutX="700.0" layoutY="117.0" mnemonicParsing="false" text="Create File"/>
+        <Label fx:id="locationText" layoutX="380.0" layoutY="118.0" prefHeight="25.0" prefWidth="304.0"
+               text="Not Selected" textFill="WHITE">
+            <font>
+                <Font size="13.0"/>
+            </font>
+        </Label>
+        <Label layoutX="308.0" layoutY="117.0" prefHeight="25.0" prefWidth="60.0" text="Location" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="13.0"/>
+            </font>
+        </Label>
+        <RadioButton fx:id="open" layoutX="93.0" layoutY="130.0" mnemonicParsing="false" text="Open Existing File"
+                     textFill="WHITE">
+            <font>
+                <Font name="Arial MT" size="13.0"/>
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="create" layoutX="93.0" layoutY="169.0" mnemonicParsing="false" text="Create a new File"
+                     textFill="WHITE">
+            <font>
+                <Font name="Arial MT" size="13.0"/>
+            </font>
+        </RadioButton>
+        <AnchorPane fx:id="createAP" layoutX="261.0" layoutY="178.0" prefHeight="200.0" prefWidth="573.0">
+            <children>
+                <Label fx:id="autoText" alignment="TOP_LEFT" layoutX="46.0" layoutY="13.0" prefHeight="44.0"
+                       prefWidth="393.0" text="Locationa" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="13.0"/>
+                    </font>
+                </Label>
+                <Button fx:id="createButton" layoutX="411.0" layoutY="13.0" mnemonicParsing="false"
+                        text="Auto Create File"/>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="createAP1" layoutX="261.0" layoutY="178.0" opacity="0.0" prefHeight="200.0"
+                    prefWidth="573.0">
+            <children>
+                <Label fx:id="autoText1" alignment="TOP_LEFT" layoutX="46.0" layoutY="13.0" prefHeight="44.0"
+                       prefWidth="393.0" text="Open File Auto" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="13.0"/>
+                    </font>
+                </Label>
+                <Button fx:id="createButton1" layoutX="419.0" layoutY="13.0" mnemonicParsing="false"
+                        text="Auto Load File"/>
+            </children>
+        </AnchorPane>
+        <Label layoutX="78.0" layoutY="47.0" text="Create or Load a file" textFill="WHITE">
+            <font>
+                <Font name="Arial MT" size="23.0"/>
+            </font>
+        </Label>
+        <Label fx:id="notValid" layoutX="308.0" layoutY="262.0"
+               text="File is not valid. Choose another one or create a new one." textFill="RED">
+            <font>
+                <Font name="Arial MT" size="13.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

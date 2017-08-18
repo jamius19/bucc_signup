@@ -1,0 +1,43 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'BUCC_Signup.jnlp'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbed_BUCC_Signup_id() {
+        dtjava.embed(
+            {
+                id : 'BUCC_Signup_id',
+                url : 'BUCC_Signup.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : 1110,
+                height : 661
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbed_BUCC_Signup_id);
+</script>
+
+</head><body>
+<h2>Test page for <b>BUCC_Signup</b></h2>
+  <b>Webstart:</b> <a href='BUCC_Signup.jnlp' onclick="return launchApplication('BUCC_Signup.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

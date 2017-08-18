@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="BUCC_Signup.jnlp">
+  <information>
+    <title>BUCC Signup</title>
+    <vendor>Jamius Siam</vendor>
+    <description>Sample JavaFX 2.0 application.</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="BUCC_Signup.jar" size="10695012" download="eager" />
+    <jar href="lib/poi-3.16.jar" size="2679259" download="eager" />
+    <jar href="poi-3.16.jar" size="2679259" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="1110" height="661" main-class="mainWin.Main"  name="BUCC_Signup" />
+  <update check="background"/>
+</jnlp>

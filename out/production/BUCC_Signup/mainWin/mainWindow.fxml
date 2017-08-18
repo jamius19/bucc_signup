@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="661.0" prefWidth="1110.0" style="-fx-background-color: #ffffff;"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainWin.Main">
+    <children>
+        <ImageView fx:id="back" fitHeight="657.0" fitWidth="1106.0" layoutX="3.0" layoutY="4.0" pickOnBounds="true">
+            <image>
+                <Image url="@../images/back.png"/>
+            </image>
+            <cursor>
+                <Cursor fx:constant="DEFAULT"/>
+            </cursor>
+        </ImageView>
+        <ImageView fx:id="back2" fitHeight="478.0" fitWidth="1064.0" layoutX="34.0" layoutY="89.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../images/belowInfo.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="522.0" fitWidth="372.0" layoutX="703.0" layoutY="68.0" pickOnBounds="true">
+            <image>
+                <Image url="@../images/signUp.png"/>
+            </image>
+        </ImageView>
+        <Button fx:id="overlay" layoutX="53.0" layoutY="52.0" mnemonicParsing="false" opacity="0.0" prefHeight="593.0"
+                prefWidth="1039.0" text="Button"/>
+        <TextField fx:id="name" alignment="CENTER" layoutX="774.0" layoutY="174.0" prefHeight="33.0" prefWidth="262.0"
+                   promptText="Name">
+            <font>
+                <Font name="Arial MT" size="18.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="id" alignment="CENTER" layoutX="774.0" layoutY="229.0" prefHeight="33.0" prefWidth="262.0"
+                   promptText="ID">
+            <font>
+                <Font name="Arial MT" size="18.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="dept" alignment="CENTER" layoutX="774.0" layoutY="279.0" prefHeight="33.0" prefWidth="262.0"
+                   promptText="Department">
+            <font>
+                <Font name="Arial MT" size="18.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="email" alignment="CENTER" layoutX="774.0" layoutY="334.0" prefHeight="33.0" prefWidth="262.0"
+                   promptText="Email">
+            <font>
+                <Font name="Arial MT" size="18.0"/>
+            </font>
+        </TextField>
+        <TextField fx:id="phone" alignment="CENTER" layoutX="774.0" layoutY="389.0" prefHeight="33.0" prefWidth="262.0"
+                   promptText="Phone Number">
+            <font>
+                <Font name="Arial MT" size="18.0"/>
+            </font>
+        </TextField>
+        <ImageView fx:id="buttonS" fitHeight="48.0" fitWidth="160.0" layoutX="809.0" layoutY="518.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../images/confimButton.png"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="buttonGray" fitHeight="48.0" fitWidth="160.0" layoutX="809.0" layoutY="518.0"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/confimGrayed.png"/>
+            </image>
+        </ImageView>
+        <ProgressIndicator fx:id="loader1" layoutX="729.0" layoutY="174.0" prefHeight="33.0" prefWidth="27.0"/>
+        <ProgressIndicator fx:id="loader2" layoutX="729.0" layoutY="229.0" prefHeight="33.0" prefWidth="27.0"/>
+        <ProgressIndicator fx:id="loader3" layoutX="729.0" layoutY="279.0" prefHeight="33.0" prefWidth="27.0"/>
+        <ProgressIndicator fx:id="loader4" layoutX="729.0" layoutY="334.0" prefHeight="33.0" prefWidth="27.0"/>
+        <ProgressIndicator fx:id="loader5" layoutX="729.0" layoutY="389.0" prefHeight="33.0" prefWidth="27.0"/>
+        <ImageView fx:id="tick1" fitHeight="33.0" fitWidth="39.0" layoutX="726.0" layoutY="174.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../images/tick.png"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="tick2" fitHeight="33.0" fitWidth="39.0" layoutX="726.0" layoutY="229.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../images/tick.png"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="tick3" fitHeight="33.0" fitWidth="39.0" layoutX="726.0" layoutY="279.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../images/tick.png"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="tick4" fitHeight="33.0" fitWidth="39.0" layoutX="726.0" layoutY="334.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../images/tick.png"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="tick5" fitHeight="33.0" fitWidth="39.0" layoutX="726.0" layoutY="389.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../images/tick.png"/>
+            </image>
+        </ImageView>
+        <Button fx:id="subButton" layoutX="809.0" layoutY="518.0" mnemonicParsing="false" opacity="0.0"
+                prefHeight="39.0" prefWidth="153.0" text="Button"/>
+        <Label fx:id="submitLabel" layoutX="854.0" layoutY="527.0" mouseTransparent="true" text="Register"
+               textFill="#a4a4a4">
+            <font>
+                <Font name="Arial MT" size="19.0"/>
+            </font>
+        </Label>
+        <ProgressBar fx:id="loaderMain" layoutX="789.0" layoutY="455.0" prefWidth="200.0"/>
+        <ImageView fx:id="close" fitHeight="22.0" fitWidth="22.0" layoutX="22.0" layoutY="23.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../images/cross.png"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="minimize" fitHeight="22.0" fitWidth="22.0" layoutX="48.0" layoutY="23.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../images/drag.png"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="about" fitHeight="22.0" fitWidth="22.0" layoutX="1053.0" layoutY="23.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../images/about.png"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="settings" fitHeight="22.0" fitWidth="22.0" layoutX="1028.0" layoutY="23.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../images/settings.png"/>
+            </image>
+        </ImageView>
+        <Label fx:id="textAbout" layoutX="809.0" layoutY="24.0" opacity="0.0" text="Developed by Jamius Siam"
+               textFill="WHITE">
+            <font>
+                <Font name="Arial MT" size="16.0"/>
+            </font>
+        </Label>
+        <ImageView fx:id="done" fitHeight="62.0" fitWidth="115.0" layoutX="954.0" layoutY="578.0" opacity="0.0"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/done.png"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="over" fitHeight="633.0" fitWidth="1080.0" layoutX="13.0" layoutY="13.0" opacity="0.73"
+                   pickOnBounds="true">
+            <image>
+                <Image url="@../images/dim.png"/>
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

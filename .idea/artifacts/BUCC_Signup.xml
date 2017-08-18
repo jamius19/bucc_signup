@@ -1,0 +1,33 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="BUCC_Signup">
+    <output-path>$PROJECT_DIR$/out/artifacts/BUCC_Signup</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="mainWin.Main" />
+        <option name="description" value="" />
+        <option name="height" value="661" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="icons">
+          <JavaFxApplicationIcons>
+            <option name="linuxIcon" value="$PROJECT_DIR$/src/images/signup-icon.ico" />
+            <option name="macIcon" value="$PROJECT_DIR$/src/images/signup-icon.ico" />
+            <option name="windowsIcon" value="$PROJECT_DIR$/src/images/signup-icon.ico" />
+          </JavaFxApplicationIcons>
+        </option>
+        <option name="title" value="BUCC Signup" />
+        <option name="vendor" value="Jamius Siam" />
+        <option name="version" value="1.0" />
+        <option name="width" value="1110" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="BUCC_Signup.jar">
+        <element id="module-output" name="BUCC_Signup" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="file-copy" path="$PROJECT_DIR$/src/lib/poi-3.16.jar" />
+      </element>
+    </root>
+  </artifact>
+</component>
