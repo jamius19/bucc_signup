@@ -2,7 +2,7 @@ BUCC Signup
 ---
 
 It is a cross platform desktop application written in Java and JavaFX for handling the Sign up process of the freshers.
-It will take all the info's from the freshers (Name, ID, Dept, Email and Phone) and will export them to a Excel File.
+It will take all the info's from the freshers (Name, ID, Dept, Email and Phone) and will export them to an Excel File.
 
 It can work with previously created excel files too.
 
